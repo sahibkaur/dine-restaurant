@@ -1,6 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    font-family: 'Spartan';
+    font-weight: lighter;
 }
 * {
     box-sizing: border-box;
@@ -9,12 +11,69 @@ body {
     height: 100vh;
 }
 .main {
-    background-image: url("homepage/hero-bg-desktop@2x.jpg");
-    height: calc(100% - 200px);
-    max-height: 800px;
+    background-image: url("homepage/hero-bg-mobile@2x.jpg");
+    height: 100%;
+    max-height: 1000vh;
     background-size: cover;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
 }
+
 .main--content {
-    margin: 20px 40px;
+    margin: 250px 20px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.main--content--heading {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.main--content--desc{
+    text-align: center;
+    line-height: 32px;
+}
+.main--content--button {
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 800px) { 
+
+    .main {
+        background-image: url("homepage/hero-bg-desktop@2x.jpg");
+        max-height: 800px;
+        height: calc(100% - 200px);
+    }
+    .main--content {
+        margin: 20px 40px;
+        margin-right: 700px;
+        padding: 50px;
+        align-items: start;
+        width: calc(100% - 700px);
+    }
+    .main--content--heading {
+        text-align: left;
+    }
+    .main--content--desc{
+        text-align: left;
+    }
+
 }
