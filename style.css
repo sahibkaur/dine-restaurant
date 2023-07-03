@@ -53,6 +53,22 @@ body {
     letter-spacing: 3px;
     font-size: 20px;
 }
+.second-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2f3f5;
+    padding: 30px;
+}
+.second--image {
+    max-width: 1000vw;
+    width: calc(100% - 50px);
+    margin-top: -70px;
+}
+.second--heading, .second-desc {
+    text-align: center;
+}
 
 
 @media screen and (min-width: 800px) { 
