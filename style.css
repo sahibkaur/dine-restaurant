@@ -73,7 +73,6 @@ body {
 .second--image, .second--image2, .third--image {
     max-width: 1000vw;
     width: calc(100% - 50px);
-
 }
 .second--image {
     margin-top: -70px;
@@ -182,6 +181,9 @@ body {
     }
     .main--content--desc{
         text-align: left;
+    }
+    .second--image, .second--image2, .third--image {
+        width: calc(100% - 900px);
     }
 
 }
