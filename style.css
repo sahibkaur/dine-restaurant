@@ -39,20 +39,28 @@ body {
     text-align: center;
     font-weight: lighter;
 }
+.section-heading {
+    text-align: center;
+}
 
 .main--content--desc, .desc, .second-desc{
     text-align: center;
     line-height: 32px;
     margin-bottom: 40px;
 }
-.main--content--button {
-    padding: 20px;
+.btn--transparent {
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #f2f3f5;
+}
+.btn {
     color: white;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 20px;
+    padding: 20px;
+}
+.btn--black {
+    background-color: #111111;
 }
 .second-container {
     display: flex;
@@ -102,9 +110,56 @@ body {
     padding: 30px;
     width: 100%;
 }
+.dish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .separator {
     width: 100%;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.links--text {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    color: #d8d8da;
+    font-weight: 700;
+}
+.link--underline {
+    width: 100px;
+    margin-top: -20px;
+}
+.active {
+    color: #111111;
+}
+.ready-container {
+    background-image: url("homepage/ready-bg-mobile.jpg");
+}
+.ready-heading {
+    color: #f2f3f5;
+    text-align: center;
+    margin: 40px 0;
+}
+.footer {
+    background-color: #111111;
+    justify-content: space-around;
+    color: #d8d8da;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact-info, .timings {
+    margin: 10px 0;
 }
 
 
