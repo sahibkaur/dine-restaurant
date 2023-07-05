@@ -35,7 +35,7 @@ body {
     width: 150px;
 }
 
-.main--content--heading, .second--heading, .third--heading {
+.main--content--heading{
     text-align: center;
     font-weight: lighter;
 }
@@ -69,6 +69,7 @@ body {
     flex-direction: column;
     background-color: #f2f3f5;
     padding: 30px;
+    position: relative;
 }
 .second--image, .second--image2, .third--image {
     max-width: 1000vw;
@@ -77,6 +78,25 @@ body {
 .second--image {
     margin-top: -70px;
 }
+
+.pattern-1 {
+    top: 90px;
+    left: 0px;
+}
+.pattern {
+    position: absolute;
+    display: none;
+}
+.pattern-2 {
+    bottom: 90px;
+    right: 0px;
+}
+.pattern-3 {
+    right: 150px;
+    bottom: 170px
+}
+
+
 .second-desc {
     font-weight: 400;
     
@@ -84,7 +104,6 @@ body {
 .circle-line {
     display: flex;
     width: 100px;
-    justify-content: center;
     align-items: center;
     margin: 20px 0;
 }
@@ -160,6 +179,16 @@ body {
 .contact-info, .timings {
     margin: 10px 0;
 }
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-images {
+    display: flex;
+    justify-content: center;
+}
 
 
 @media screen and (min-width: 800px) { 
@@ -183,7 +212,35 @@ body {
         text-align: left;
     }
     .second--image, .second--image2, .third--image {
-        width: calc(100% - 900px);
+        width: 400px;
+    }
+    .section {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .pattern {
+        display: block;
+    }
+    .section-content {
+        display: block;
+        text-align: left;
+        width: 500px;
+    }
+    .second--heading, .desc {
+        text-align: left;
+    }
+    .content-1 {
+        margin-left: 50px;
+    }
+    .content-2 {
+        margin-right: 50px;
+    }
+    .second--image2 {
+        margin-bottom: -90px;
+    }
+    .section-images {
+        display: block;
     }
 
 }
