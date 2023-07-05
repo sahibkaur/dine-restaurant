@@ -197,7 +197,7 @@ body {
 }
 
 
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 900px) { 
 
     .main {
         background-image: url("homepage/hero-bg-desktop@2x.jpg");
@@ -285,5 +285,8 @@ body {
     }
     .pattern-white {
         display: block;
+    }
+    .separator {
+        opacity: 0.25;
     }
 }
