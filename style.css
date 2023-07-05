@@ -195,6 +195,11 @@ body {
 .heading {
     text-align: center;
 }
+.footer p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
 
 
 @media screen and (min-width: 900px) { 
@@ -289,4 +294,23 @@ body {
     .separator {
         opacity: 0.25;
     }
+    .ready-container {
+        padding:100px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .ready-heading {
+        font-size: 40px;
+    }
+    .fourth-container {
+        flex-direction: row;
+    }
+    .big-heading {
+        font-size: 40px;
+    }
+    /* .third--image {
+        max-width: max-content;
+        width: calc((100% - 200px));
+        padding: 30px;
+    } */
 }
