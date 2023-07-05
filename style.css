@@ -39,7 +39,7 @@ body {
     text-align: center;
     font-weight: lighter;
 }
-.section-heading {
+.heading {
     text-align: center;
 }
 
@@ -95,8 +95,6 @@ body {
     right: 150px;
     bottom: 170px
 }
-
-
 .second-desc {
     font-weight: 400;
     
@@ -190,6 +188,14 @@ body {
     justify-content: center;
 }
 
+.pattern-white {
+    color: white;
+    display: none;
+}
+.heading {
+    text-align: center;
+}
+
 
 @media screen and (min-width: 800px) { 
 
@@ -211,8 +217,21 @@ body {
     .main--content--desc{
         text-align: left;
     }
-    .second--image, .second--image2, .third--image {
+    .second--image, .second--image2{
         width: 400px;
+    }
+    .dish-image {
+        width: 150px;
+    }
+    .dishes {
+        width: 700px;
+    }
+    .dish {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .dish-content {
+        margin-left: 50px;
     }
     .section {
         display: flex;
@@ -227,7 +246,7 @@ body {
         text-align: left;
         width: 500px;
     }
-    .second--heading, .desc {
+    .second--heading, .desc, .heading {
         text-align: left;
     }
     .content-1 {
@@ -242,5 +261,29 @@ body {
     .section-images {
         display: block;
     }
-
+    .third-container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 100px;
+    }
+    .separator {
+        width: calc(100% - 200px);
+        color: #808080;
+    }
+    .dish-image-container {
+        position: relative;
+    }
+    .dish-line {
+        position: absolute;
+        width: 50px;
+        right: -30px;
+        top: 20px;
+        z-index: 0;
+    }
+    .section-content {
+        margin-right: 50px;
+    }
+    .pattern-white {
+        display: block;
+    }
 }
