@@ -10,10 +10,33 @@ body, html {
 body {
     height: 100vh;
 }
-.main {
-    background-image: url("homepage/hero-bg-mobile@2x.jpg");
+.home {
     height: 100%;
     max-height: 1000vh;
+    display: flex;
+}
+.bg-container {
+    background-image: url("../homepage/hero-bg-mobile@2x.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.gradient {
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.text-content {
+    color: white;
+    margin-top: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.main {
     background-size: cover;
     margin: 0;
     display: flex;
@@ -47,20 +70,6 @@ body {
     text-align: center;
     line-height: 32px;
     margin-bottom: 40px;
-}
-.btn--transparent {
-    background-color: transparent;
-    border: 2px solid #f2f3f5;
-}
-.btn {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 20px;
-    padding: 20px;
-}
-.btn--black {
-    background-color: #111111;
 }
 .second-container {
     display: flex;
@@ -204,17 +213,35 @@ body {
 
 @media screen and (min-width: 900px) { 
 
-    .main {
-        background-image: url("homepage/hero-bg-desktop@2x.jpg");
+    .home {
+        position: relative;
         max-height: 800px;
         height: calc(100% - 200px);
     }
+    .bg-container {
+        background-image: url("../homepage/hero-bg-desktop@2x.jpg");
+    }
+
+    .gradient {
+        padding: 80px;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(18,18,18,0) 30%, rgba(255,255,255,0) 100%);
+    }
+    .text-content {
+        width: 50%;
+        margin: 0;
+        text-align: left;
+    }
+
+    
+
+    .container {
+        align-items: normal;
+    }
     .main--content {
-        margin: 20px 40px;
-        margin-right: 700px;
-        padding: 50px;
+        margin: 0;
         align-items: start;
-        width: calc(100% - 700px);
+        /* width: calc(100% - 500px); */
     }
     .main--content--heading {
         text-align: left;
