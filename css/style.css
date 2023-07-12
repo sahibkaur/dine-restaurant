@@ -193,8 +193,20 @@ body {
     font-weight: 500;
 }
 
+@media screen and (min-width: 768px) { 
+    .text-content {
+        margin-top: 500px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .home {
+        height: 110%;
+    }
+    
+}
 
-@media screen and (min-width: 900px) { 
+
+@media screen and (min-width: 992px) { 
 
     .home {
         position: relative;
