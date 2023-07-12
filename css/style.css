@@ -35,24 +35,10 @@ body {
     margin-right: 20px;
     text-align: center;
 }
-
-.main {
-    background-size: cover;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
+.heading {
+    font-weight: lighter;
 }
 
-.main--content {
-    margin: 250px 20px;
-    margin-bottom: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .logo {
     width: 150px;
@@ -61,9 +47,6 @@ body {
 .main--content--heading{
     text-align: center;
     font-weight: lighter;
-}
-.heading {
-    text-align: center;
 }
 
 .main--content--desc, .desc, .second-desc{
@@ -233,21 +216,13 @@ body {
         text-align: left;
     }
 
+    .heading {
+        font-size: var(--heading1);
+    }
     
 
     .container {
         align-items: normal;
-    }
-    .main--content {
-        margin: 0;
-        align-items: start;
-        /* width: calc(100% - 500px); */
-    }
-    .main--content--heading {
-        text-align: left;
-    }
-    .main--content--desc{
-        text-align: left;
     }
     .second--image, .second--image2{
         width: 400px;
@@ -356,9 +331,7 @@ body {
         align-items: self-start;
         margin-left: 20px;
     }
-    .heading, .desc {
-        text-align: left;
-    }
+
     .sub-section {
         align-items: self-start;
         justify-content: space-between;
