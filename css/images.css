@@ -1,0 +1,35 @@
+.image-cont {
+    max-width: 800px;
+    width: calc(100% - 50px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image1 {
+    background-image: url(../homepage/enjoyable-place-desktop.jpg);
+    margin-top: -70px;
+}
+
+.image2 {
+    background-image: url(../homepage/locally-sourced-mobile.jpg);
+}
+
+@media screen and (min-width: 768px) { 
+    .image-cont {
+        height: 400px;
+    }
+}
+
+
+@media screen and (min-width: 992px) { 
+    .image-cont {
+        height: 400px;
+        width: 400px;
+    }
+    .image1 {
+        background-image: url(../homepage/enjoyable-place-mobile.jpg);
+    }
+    .image2 {
+        background-image: url(../homepage/locally-sourced-mobile.jpg);
+    }
+}
